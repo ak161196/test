@@ -1,0 +1,340 @@
+/* ------- Спецификация ------- */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans',  sans-serif;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	padding: 0;
+	margin: 0; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #2d3033;
+	line-height: 1.6em;
+}
+
+h1 {
+	font-size: 45px;
+	color: #fff;
+}
+
+h2 {
+	font-size: 36px; 
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 22px; 
+}
+
+h5{
+	font-size: 14px;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+ button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+
+ {
+	outline: none;
+}
+
+.container-fluid_plain {
+	padding: 0;
+}
+
+.btn {
+	font-size: 13px;
+	color: #fff;
+	background: #e84545;
+	text-align: center;
+	text-transform: uppercase;
+	width: 200px;
+	padding: 14px 0;
+	font-weight: 700;
+	display: block;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: #fff;
+	color: #e2512b;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+/* ------ Первый экран ------ */
+
+.fixed-panel {
+	background: url(../image/image3.png) center top/cover;
+}
+
+
+
+.header {
+	background: url(../img/header.jpg) center top/cover;
+	color: #fff;
+	padding-top: 19px;
+	padding-bottom: 243px;
+}
+
+.logo {
+	color: #626fe4;
+	font-weight: 700;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.logo span {
+	color: #fff;	
+}
+
+.menu {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.menu__item {
+	font-size: 14px;
+	text-transform: uppercase;
+	display: block;
+}
+
+.menu__item a {
+	color: #fff;
+	margin-left: auto;
+	padding: 0 37px 37px;
+}
+
+.menu__item_last a {
+	padding: 0 0 37px 37px;
+}
+
+.menu__item a:hover {
+	padding-bottom: 29px;
+	border-bottom : 3px solid #9a9a9f;
+}
+
+.offer {
+	border-top: 1px solid #53535b;
+	text-align: center;
+	padding-top: 160px;
+}
+
+.offer__title {
+	color: #fff;
+}
+
+.offer__btn {
+	margin: 0 auto;
+}
+
+.offer__text {
+	font-size: 22px;
+	margin-bottom: 42px;
+	margin-top: 35px;
+}
+
+/* ------ Второй экран ------ */
+
+.features {
+	padding: 111px 0 123px;
+}
+
+.feature {
+	text-align: center;
+	margin-bottom: 65px;
+}
+
+.feature__text {
+	font-size: 14px;
+}
+
+.feature__img {
+	margin-bottom: 26px;
+}
+
+/*------- Photos -------*/
+
+.photos {
+	padding-bottom: 128px;
+}
+
+.photo__wrap {
+  transition: all 0.5s ease;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.photo__overlay {
+  background: rgba(232,69,69,0.9);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.photo__project, .photo__user {
+	color: #fff;
+}
+
+.photo__wrap:hover .photo__overlay  {
+  opacity: 1;
+}
+
+.photo__img {
+  max-width: 100%;
+}
+
+/*------- info -------*/
+
+.info {
+	background: #f1f2fd;
+	padding: 123px 0 113px;
+}
+
+.portfolio__img {
+	max-width: 100%;
+}
+
+.portfolio__title {
+	margin-top: 25px
+}
+
+.portfolio__profession {
+	font-size: 13px;
+	color: #e84545;
+	text-transform: uppercase;
+	margin-bottom: 26px;
+}
+
+.portfolio__text {
+	font-size: 14px;
+}
+
+.portfolio__img {
+	margin-top: 51px;
+}
+
+.fa {
+	background: #fff;
+	width: 38px;
+	height: 37px;
+	margin-right: 5px;
+	text-align: center;
+	line-height: 38px;
+	color: #c6cacc;
+}
+
+/*------- Fluid -------*/
+
+.workspace {
+	background: url('../img/woman.jpg') no-repeat center center/cover;
+	height: 500px;
+}
+
+.true {
+	background: #53354a;
+	padding: 129px 0 82px 82px;
+	width: 100%;
+}
+
+.true__title {
+	width: 500px;
+	text-transform: none;
+	color: #fff;
+	line-height: 1.2em;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.true__text {
+	margin-top: 20px;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+/*------- Are You Ready to Start? -------*/
+
+.start {
+	padding-top: 85px;
+	padding-bottom: 100px;
+}
+
+.start__now {
+	text-align: center;
+}
+
+.start__title {
+	text-transform: inherit;
+}
+
+.start__text {
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.start__btn {
+	margin: 0 auto;
+	width: 280px;
+}
+
+/*------- footer -------*/
+
+.footer {
+	background: #3a3e64;
+	padding: 82px 0;
+	color:  #7c7c7e;
+	text-align: center;
+	font-size: 14px;
+}
+
+.location__title {
+	color: #fff;
+}
+
+.Y {
+	color: #e84545;
+}
+
+.by {
+	color: #fff;
+}

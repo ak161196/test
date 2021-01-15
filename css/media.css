@@ -1,0 +1,53 @@
+/* ------- Media Queries ------- */
+
+@media screen and (max-width: 1200px) {
+  .true__title{
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .logo{
+    text-align: center;
+  }
+  nav{
+    display: none;
+  }
+  .offer{
+    border:none;
+  }
+  .portfolio{
+    text-align: center;
+  }
+  .portfolio__icon{
+    justify-content: center;
+  }
+  .true{
+    padding: 82px;
+  }
+  .true__title{
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .workspace{
+    max-height: 400px;
+  }
+
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+  .true__title{
+    font-size: 20px;
+  }
+  .true{
+    padding: 82px;
+  }
+  .workspace{
+    max-height: 300px;
+  }
+}
+
+
